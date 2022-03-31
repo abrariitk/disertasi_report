@@ -1,0 +1,1178 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass IEEEtran
+\begin_preamble
+% for subfigures/subtables
+\usepackage[caption=false,font=footnotesize]{subfig}
+\end_preamble
+\options conference
+\use_default_options false
+\maintain_unincluded_children false
+\language english
+\language_package none
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures false
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command bibtex
+\index_command default
+\float_placement tbh
+\paperfontsize 10
+\spacing single
+\use_hyperref true
+\pdf_title "Your Title"
+\pdf_author "Your Name"
+\pdf_bookmarks true
+\pdf_bookmarksnumbered true
+\pdf_bookmarksopen true
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder true
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle false
+\pdf_quoted_options "pdfpagelayout=OneColumn, pdfnewwindow=true, pdfstartview=XYZ, plainpages=false"
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 2
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+This is a template \SpecialChar LyX
+ file for conference articles of conferences organized
+ by the Institute of Electrical and Electronics Engineers (IEEE).
+ For IEEE journal articles, see the template file 
+\emph on
+IEEEtran-Journal.lyx
+\emph default
+.
+ For general info see 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+https://wiki.lyx.org/Examples/IEEE
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+It is important that you use the correct document class options for your
+ document..
+ These are explained in the IEEEtran documentation: 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+http://mirror.ctan.org/macros/latex/contrib/IEEEtran/IEEEtran_HOWTO.pdf
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Title
+Nonlinear Transformation in Reservoir Computing for Lorenz-96 Equations
+\end_layout
+
+\begin_layout Author
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+the standard way:
+\end_layout
+
+\end_inset
+
+
+\begin_inset Flex Author Name
+status open
+
+\begin_layout Plain Layout
+A92
+\end_layout
+
+\end_inset
+
+
+\begin_inset Flex Author Affiliation
+status open
+
+\begin_layout Plain Layout
+Khalifa University
+\begin_inset Newline newline
+\end_inset
+
+Abu Dhabi, United Arab Emirates
+\end_layout
+
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+and 
+\end_layout
+
+\end_inset
+
+
+\begin_inset Flex Author Name
+status open
+
+\begin_layout Plain Layout
+Hadi Susanto
+\end_layout
+
+\end_inset
+
+
+\begin_inset Flex Author Affiliation
+status collapsed
+
+\begin_layout Plain Layout
+Khalifa University
+\begin_inset Newline newline
+\end_inset
+
+Abu Dhabi, United Arab Emirates
+\begin_inset Newline newline
+\end_inset
+
+Email: hadi.susanto@ku.ac.ae
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+and 
+\end_layout
+
+\end_inset
+
+
+\begin_inset Flex Author Name
+status open
+
+\begin_layout Plain Layout
+Samuel Feng
+\end_layout
+
+\end_inset
+
+
+\begin_inset Flex Author Affiliation
+status open
+
+\begin_layout Plain Layout
+Khalifa University
+\begin_inset Newline newline
+\end_inset
+
+Abu Dhabi, United Arab Emirates
+\begin_inset Newline newline
+\end_inset
+
+Email: hadi.susanto@ku.ac.ae
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Abstract
+Reservoir computing is state of the art in solving dynamical systems using
+ machine learning.
+ In this paper, we investigate the impact of nonlinear states transformation
+ on the accuracy of short-time prediction of Lorenz-96 equations.
+ A preliminary numerical experiment showed no significant difference between
+ the performance of the nonlinear transformation used in the simulation.
+\end_layout
+
+\begin_layout Peer Review Title
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Don't add text here!
+\end_layout
+
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+required if you use the document class option 
+\family sans
+peerreview
+\family default
+, must otherwise not be used
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Introduction
+\end_layout
+
+\begin_layout Standard
+The partial differential equations are widely used for modelling physical
+ systems.
+ A classical approach to solve this equations is by discretizing the methods
+ using various discretization schemes such as finite difference method,
+ finite element method, finite volume method, etc.
+ Recently there has been growing interest in solving the partial differential
+ equations based on data-driven approaches (see survey in 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Brunton2020"
+literal "false"
+
+\end_inset
+
+ ).
+ Among reasons to consider machine learning to solve physical problems includes
+ ability to incorporate measurement data/knowledge model in the model 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Pathak2018"
+literal "false"
+
+\end_inset
+
+ and speed up computations by modelling computation expensive task and using
+ machine learning approach as closure model to describe missing dynamics
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Vinuesa2021"
+literal "false"
+
+\end_inset
+
+.
+ However, applications of machine learning still pose many challenges and
+ skepticism, such as the generalizability of the prediction, interprebility
+ of the model, the incorporating the physical knowledge in the system 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Brenner2019a"
+literal "false"
+
+\end_inset
+
+ .
+ 
+\end_layout
+
+\begin_layout Standard
+Reservoir computing is one of the machine learning approach that is used
+ to solve partial differential equations involving time and spatial variables.
+ It has shown superiority in simulating dynamical systems compared to other
+ machine learning approaches 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Lukosevicius2009a,Chattopadhyay2020,Jaeger2004"
+literal "false"
+
+\end_inset
+
+.
+ Recently, there have been growing interest to tackle problems involving
+ partial differential equations 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Chattopadhyay2020,Pathak2018,Pathak2021"
+literal "false"
+
+\end_inset
+
+.
+ Nonlinear transformation was introduced in 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Chattopadhyay2020,Pathak2018"
+literal "false"
+
+\end_inset
+
+ to enrich the nonlinear feature of the reservoir.
+ The paper aims to compare the non-linear transformations proposed in 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Chattopadhyay2020"
+literal "false"
+
+\end_inset
+
+ in solving Lorenz-96 equations which is a prototype for a chaotic spatiotempora
+l system.
+ 
+\end_layout
+
+\begin_layout Section
+Method
+\end_layout
+
+\begin_layout Standard
+Reservoir Computing (RC) can be taught as a subset of recurrent neural networks,
+ however the reservoir parameters are fixed, and only the readout parameters
+ are trained.
+ In this research, we follow the adjustment for spatiotemporal models 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Pathak2018"
+literal "false"
+
+\end_inset
+
+, which split the spatial data into overlapping domains and train multiple
+ reservoirs for each data chunk.
+ The reasoning for splitting the data is that the exchange of information
+ between two very far seperated spatial grid is not immediate, thus creating
+ reservoir state modelling a connection between faraway points is not physical
+ and a waste of computation effort.
+ Thus partitioning the grid while maintaining the exchange of information
+ between reservoirs, render the size of reservoir and the amount of training
+ data manageable.
+\end_layout
+
+\begin_layout Standard
+To be precise, let a measurement data consist of spatiotemporal data 
+\begin_inset Formula $\mathbf{U}=(u_{ij})$
+\end_inset
+
+ , with temporal index 
+\begin_inset Formula $1\leq i\leq N_{\tau},$
+\end_inset
+
+ and spatial index 
+\begin_inset Formula $1\leq j<N_{\xi}$
+\end_inset
+
+.
+ The periodic spatial grids are splitted into non-overlapping regions 
+\begin_inset Formula $\mathbf{s}^{(k)}=\left(s_{ij}^{(k)}\right)$
+\end_inset
+
+ , with 
+\begin_inset Formula $1\leq j\leq n_{p},1\leq k\leq M$
+\end_inset
+
+ with 
+\begin_inset Formula $n_{p}$
+\end_inset
+
+ is the number of nodes at each partition and 
+\begin_inset Formula $M$
+\end_inset
+
+ is the number of partition.
+ Remark that 
+\begin_inset Formula $M\times n_{p}=N_{\xi}$
+\end_inset
+
+.
+ Associated with each partition 
+\begin_inset Formula $\mathbf{s}^{(k)}$
+\end_inset
+
+ an overlapping domain 
+\begin_inset Formula $\mathbf{v}^{(k)}$
+\end_inset
+
+ with 
+\begin_inset Formula $l$
+\end_inset
+
+ nodes overlap buffer regions at each most left and right nodes , thus 
+\begin_inset Formula $\mathbf{v}^{(k)}$
+\end_inset
+
+ has 
+\begin_inset Formula $n_{p}+2l$
+\end_inset
+
+ spatial grid.
+ Furthermore, the data is temporally split into training and testing sets.
+ The overlapping domain serves as input for each reservoir enabling exchange
+ of information between neighbouring reservoir, while the non-overlapping
+ domains will act as the output.
+ 
+\end_layout
+
+\begin_layout Standard
+Listening process corresponds to constructing reservoirs and evolve them
+ based on input and previous states.
+ Specifically let 
+\begin_inset Formula $r_{i}^{(k)}\in\mathbb{R}^{M}$
+\end_inset
+
+ with 
+\begin_inset Formula $M\gg n_{p}+2l$
+\end_inset
+
+ denote the state of reservoir 
+\begin_inset Formula $k$
+\end_inset
+
+ at time index 
+\begin_inset Formula $i$
+\end_inset
+
+.
+ The reservoir dynamics is given by: 
+\begin_inset Formula $r_{i+1}^{(k)}=\tanh\left(W^{(k)}r_{i}^{(k)}+W_{in}^{(k)}v_{i}^{(k)}\right)$
+\end_inset
+
+.
+ The matrix 
+\begin_inset Formula $W^{(k)}$
+\end_inset
+
+ is an adjecency matrix which set to ensure 
+\begin_inset Quotes eld
+\end_inset
+
+Echo States Property
+\begin_inset Quotes erd
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Jaeger2004"
+literal "false"
+
+\end_inset
+
+.
+ In a simplified term, this condition expresses that the previous state's
+ effect to the future state should vanish gradually.
+ Practically, the echo state property is satisfied by scaling 
+\begin_inset Formula $W^{(k)},$
+\end_inset
+
+ such that 
+\begin_inset Formula $W^{(k)}$
+\end_inset
+
+ is contractive i.e.
+ the spectral radius of matrix 
+\begin_inset Formula $\rho$
+\end_inset
+
+ satisfies 
+\begin_inset Formula $\rho<1$
+\end_inset
+
+.
+ Furthermore, the adjecency matrix is set to be sparsely connected and random
+ to ensure that the reservoir is rich enough for learning phase.
+ The input coupling matrix 
+\begin_inset Formula $W_{in}^{(k)}$
+\end_inset
+
+ is a sparse matrix whose entries magnitude are not more than 
+\begin_inset Formula $\sigma$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+The learning phase involves finding an output matrix 
+\begin_inset Formula $W_{out}^{(k)}$
+\end_inset
+
+ such that the output 
+\begin_inset Formula $\tilde{s}_{i}^{(k)}=W_{out}^{(k)}\hat{r}_{i}^{(k)}$
+\end_inset
+
+ minimize a cost functional.
+ The modified state 
+\begin_inset Formula $\hat{r}_{i}^{(k)}$
+\end_inset
+
+ is a nonlinear modification aimed to further enhance the nonlinearity feature
+ of the reservoir
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Chattopadhyay2020,Pathak2018"
+literal "false"
+
+\end_inset
+
+.
+ The cost function is regularized using Tikhonov regularization and defined
+ as 
+\begin_inset Formula 
+\begin{equation}
+E^{(k)}=\min_{W_{out}^{k}}\sum_{i=1}^{N_{train}}\left\Vert W_{out}^{(k)}\hat{r}_{i}^{(k)}-s_{i}^{(k)}\right\Vert _{2}^{2}+\beta\left\Vert W_{out}^{(k)}\right\Vert ^{2}\label{eq:Cost_Function}
+\end{equation}
+
+\end_inset
+
+which can be solved by any linear least square algorithm.
+ 
+\end_layout
+
+\begin_layout Standard
+The prediction phase updates the reservoir nodes in the similar manner as
+ the training phase except that a feedback of the reservoir output replaces
+ the input vector 
+\begin_inset Formula $v_{i}^{(k)}$
+\end_inset
+
+.
+ Noting that 
+\begin_inset Formula $v_{i}^{(k)}$
+\end_inset
+
+ consists of overlapping domains, the output should be constructed by combining
+ readout from the neighbouring reservoir 
+\begin_inset Formula $y_{i}^{(k-1)},y_{i}^{(k)}y_{i}^{(k+1)}$
+\end_inset
+
+.
+ The output is generated by multiplying the learned output matrix and the
+ updated reservoir state.
+ These processes are repeated until the desired prediction horizon.
+ 
+\end_layout
+
+\begin_layout Section
+Numerical Experiment
+\end_layout
+
+\begin_layout Standard
+The Lorentz 96 system is a coupled ordinary differential equation that is
+ used as an initial model for atmospheric dynamics or testing a machine
+ learning algorithm for chaotic spatiotemporal system 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Pathak2021,Chattopadhyay2020"
+literal "false"
+
+\end_inset
+
+.
+ The model is defined as coupled ordinary differential equations: 
+\begin_inset Formula 
+\[
+\frac{dX_{j}}{dt}=-X_{j}+X_{j-1}X_{j+1}-X_{j-1}X_{j-2}+F
+\]
+
+\end_inset
+
+with the spatial variables 
+\begin_inset Formula $X_{j}$
+\end_inset
+
+, 
+\begin_inset Formula $1\leq j\leq N$
+\end_inset
+
+,
+\begin_inset Formula $X_{j+N}=X_{j}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+The training data was generated by using 4th order Runge Kutta time integrator
+ with 
+\begin_inset Formula $\Delta t=0.01$
+\end_inset
+
+ and choosing 
+\begin_inset Formula $F=8$
+\end_inset
+
+.
+ The initial condition at every grid is a random number between 0 and 1.
+ The largest Lyapunov exponent for this system is 
+\begin_inset Formula $\Lambda=1.4$
+\end_inset
+
+.
+ The hyperparameter used in reservoir computing is given in Table 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "hyp_Lorenz"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ which are quite similar with the hyperparameter in a similar problem used
+ in 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Pathak2021"
+literal "false"
+
+\end_inset
+
+.
+ The spatially averaged error at time index 
+\begin_inset Formula $i$
+\end_inset
+
+ is given by: 
+\begin_inset Formula $e_{i}=\tfrac{\left\Vert \tilde{u}_{i}-u_{i}\right\Vert }{\left\Vert u_{i}\right\Vert }$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="9">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0pt">
+<column alignment="center" valignment="top" width="0pt">
+<column alignment="center" valignment="top" width="0pt">
+<column alignment="center" valignment="top" width="0pt">
+<column alignment="center" valignment="top" width="0pt">
+<column alignment="center" valignment="top" width="0pt">
+<column alignment="center" valignment="top" width="0pt">
+<column alignment="center" valignment="top" width="0pt">
+<column alignment="center" valignment="top" width="0pt">
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Parameter
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\rho$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\sigma$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\beta$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $M$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $l$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $D$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $N$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $N_{train}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Value
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.6
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $10^{-4}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+20
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5000
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+40
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+80000
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Hyperparameter for Lorenz 96
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "hyp_Lorenz"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+There are three non-linear transformation considered in this paper.
+ The NLT1 was proposed in 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Pathak2018"
+literal "false"
+
+\end_inset
+
+ and transforms 
+\begin_inset Formula $r_{ij}$
+\end_inset
+
+ for odd 
+\begin_inset Formula $j$
+\end_inset
+
+ into 
+\begin_inset Formula $r_{ij}^{2}.$
+\end_inset
+
+ The reference 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Chattopadhyay2020"
+literal "false"
+
+\end_inset
+
+ considered alternative transformations, which we denote as NLT2 and NLT3
+ with the odd entries transformed into 
+\begin_inset Formula $r_{i(j-1)}r_{i(j-2)}$
+\end_inset
+
+ and 
+\begin_inset Formula $r_{i(j-1)}r_{i(j+1)}$
+\end_inset
+
+ ,respectively.
+ 
+\end_layout
+
+\begin_layout Standard
+The upper graph of Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig_pred_Lorenz"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ shows the time trace of prediction using three non-linear transformations
+ at 
+\begin_inset Formula $X_{20}.$
+\end_inset
+
+ The picture shows that the three non-linear transformations have comparable
+ short term prediction capabilities.
+ A similar pattern could be observed in the lower figure, which shows the
+ spatial averaged error of the three nonlinear transformations.
+ Even though apparently NLT1 gives double error compared to the rest of
+ non-linear transformation until 
+\begin_inset Formula $\Lambda t=1$
+\end_inset
+
+, the error is not very much different at 2 Lyapunov times.
+ Considering that the Lorenz-96 is a chaotic system, a particular realization
+ of the prediction is not enough to conclude which non-linear transformation
+ gives a better result.
+ A plausible approach to get a conclusive pattern is by repeatedly doing
+ the prediction phase by resetting the reservoir states and feed with real
+ data and then switching to prediction phase and take an average over the
+ different realizations of the systems 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Pathak2021"
+literal "false"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename E:/KU/Julia/Lorenz/compareNLT.png
+	width 80col%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+(upper): comparison of time trace prediction at 
+\begin_inset Formula $X_{20}$
+\end_inset
+
+.
+ (lower): spatially average error over the whole spatial grid
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig_pred_Lorenz"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Conclusions
+\end_layout
+
+\begin_layout Standard
+Reservoir computing is a data-driven method suitable for solving dynamical
+ systems.
+ The method accurately gives short time prediction over Lorenz-96 equations
+ with RMSE less than 0.2 for one Lyapunov times.
+ The non-linear transformations considered in the study yield similar performanc
+e in the prediction phase.
+ However, further research should be done, such as obtaining statistical
+ inferences from the data.
+ 
+\end_layout
+
+\begin_layout Section*
+\begin_inset Note Note
+status open
+
+\begin_layout Section*
+Acknowlegment
+\end_layout
+
+\begin_layout Plain Layout
+The authors wish to acknowledge the contribution of Khalifa University's
+ high-performance computing and research computing facilities to the results
+ of this research.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Remember though that your final submission is supposed to have all the bibliogra
+phy entries embedded in the \SpecialChar LaTeX
+-file.
+ This means you eventually have to copy the .bbl file into the latex file
+ and remove the bibtex lines.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+btprint "btPrintCited"
+bibfiles "IEEEabrv,E:/KU/bib_files/Dissertation"
+options "IEEEtran"
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

@@ -1,0 +1,2618 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass elsarticle
+\begin_preamble
+% specify here the journal
+\journal{Example: Nuclear Physics B}
+
+% use this if you need line numbers
+%\usepackage{lineno}
+\end_preamble
+\options 11pt
+\use_default_options false
+\begin_modules
+eqs-within-sections
+figs-within-sections
+theorems-std
+\end_modules
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures false
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command bibtex
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine natbib
+\cite_engine_type authoryear
+\biblio_style elsarticle-num-names
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2cm
+\topmargin 2cm
+\rightmargin 2cm
+\bottommargin 2cm
+\headheight 1cm
+\headsep 1cm
+\footskip 1cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 2
+\paperpagestyle headings
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+This is a template \SpecialChar LyX
+ file for articles to be submitted to journals of the
+ Elsevier publishing company.
+ For general infos see 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+https://wiki.lyx.org/Examples/Elsevier
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+The Journal is specified in the document preamble! For the right document
+ class options to get the page format for your journal, have a look at the
+ elsarticle documentation: 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+http://www.ctan.org/get/macros/latex/contrib/elsarticle/elsdoc.pdf
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout BeginFrontmatter
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Keep this empty!
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Title
+Reservoir Computing on Non-Linear Schr
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\begin_inset Quotes erd
+\end_inset
+
+{o}
+\end_layout
+
+\end_inset
+
+dinger Equation 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+newline
+\end_layout
+
+\end_inset
+
+
+\size footnotesize
+Progress Report 27 January 2022
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+There are two author styles possible:
+\end_layout
+
+\begin_layout Plain Layout
+1.
+ Authors side by side
+\begin_inset space \hfill{}
+\end_inset
+
+2.
+ Authors below each other
+\begin_inset space \hfill{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+Author
+\begin_inset space \hfill{}
+\end_inset
+
+Author
+\begin_inset space \hfill{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+Email
+\begin_inset space \hfill{}
+\end_inset
+
+Email
+\begin_inset space \hfill{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+Author
+\begin_inset space \hfill{}
+\end_inset
+
+Address
+\begin_inset space \hfill{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+Email
+\begin_inset space \hfill{}
+\end_inset
+
+Author
+\begin_inset space \hfill{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+Addresses
+\begin_inset space \hfill{}
+\end_inset
+
+Email
+\begin_inset space \hfill{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+——-
+\begin_inset space \hfill{}
+\end_inset
+
+Address
+\begin_inset space \hfill{}
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Author
+A.
+ N.
+ Hasmi
+\begin_inset Flex CorAuthormark
+status open
+
+\begin_layout Plain Layout
+cor1
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+rvt
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Email
+100060615@ku.ac.ae
+\end_layout
+
+\begin_layout Email
+abrari@lecturer.itk.ac.id
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+At least one Email address is required.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Author
+\begin_inset Note Note
+status open
+
+\begin_layout Author
+K.
+\begin_inset space ~
+\end_inset
+
+Bazargan
+\begin_inset Flex Authormark
+status open
+
+\begin_layout Plain Layout
+fn2
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+rvt,focal
+\end_layout
+
+\end_inset
+
+
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+
+\size normal
+With 
+\series bold
+\size default
+
+\backslash
+fnref
+\series default
+\size normal
+ and you refer to the author footnotes.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Email
+http://www.elsevier.com
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+url
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Corresponding author
+Corresponding author
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+cor1
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Address
+Khalifa University, Abu Dhabi, UAE, 127788
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+rvt
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Address
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+River Valley Technologies, 9, Browns Court, Kennford, Exeter, United Kingdom
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+focal
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+This is an example of the second author style:
+\end_layout
+
+\begin_layout Author
+C.V.
+\begin_inset space ~
+\end_inset
+
+Radhakrishnan
+\end_layout
+
+\begin_layout Email
+cvr@river-valley.com
+\end_layout
+
+\begin_layout Address
+River Valley Technologies, SJP Building, Cotton Hills, Trivandrum, Kerala,
+ India 695014
+\end_layout
+
+\begin_layout Author
+K.
+\begin_inset space ~
+\end_inset
+
+Bazargan
+\end_layout
+
+\begin_layout Email
+http://www.elsevier.com
+\begin_inset Argument 2
+status collapsed
+
+\begin_layout Plain Layout
+url
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Address
+River Valley Technologies, 9, Browns Court, Kennford, Exeter, United Kingdom
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Abstract
+Abstract, should normally be not longer than 200 words.
+\end_layout
+
+\begin_layout Keywords
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+quadruple exiton 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+sep
+\end_layout
+
+\end_inset
+
+ polariton 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+sep
+\end_layout
+
+\end_inset
+
+ WGM 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+PACS
+\end_layout
+
+\end_inset
+
+ 71.35.-y 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+sep
+\end_layout
+
+\end_inset
+
+ 71.35.Lk 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+sep
+\end_layout
+
+\end_inset
+
+ 71.36.+c 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+MSC[2008]
+\end_layout
+
+\end_inset
+
+23-557
+\end_layout
+
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Keywords must be separated by 
+\series bold
+
+\backslash
+sep
+\series default
+.
+ 
+\series bold
+
+\backslash
+PACS
+\series default
+ and 
+\series bold
+
+\backslash
+MSC
+\series default
+ are optional classifications.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout EndFrontmatter
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Keep this empty!
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Use here the command 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+linenumbers 
+\end_layout
+
+\end_inset
+
+ and enable the package 
+\series bold
+lineno
+\series default
+ in the preamble if you need line numbers.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Introduction
+\end_layout
+
+\begin_layout Standard
+The success of machine learning especially deep learning have prompted a
+ new interest in scientific community to apply the machine learning method
+ to solve challenges in physical problems modeled by partial differential
+ equations involving spatiotemporal variables.
+ Depending on the approaches used, there are several perks including deep
+ learning/data-driven approaches to physical problems which includes : (1)
+ ability to incorporate measurement data in the model predictions 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Pathak2018"
+literal "false"
+
+\end_inset
+
+ (2) Speed up computations by modelling computation expensive task and using
+ machine learning approach as closure model to describe missing dynamics
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Vinuesa2021"
+literal "false"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+These years, there are many approaches to apply machine learning to solve
+ partial differential equations, a non-exhaustive approach to the methods
+ includes Physics Informed Neural Network 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Zubov2021,Raissi2019"
+literal "false"
+
+\end_inset
+
+ and Reservoir Computing 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Pathak2018,Doan2021,Jaeger2004,Lukosevicius2009"
+literal "false"
+
+\end_inset
+
+.
+ Reservoir Computing is a model-free approach, in the sense that the mathematica
+l equations are not supplied as an input for the model.
+ The strength of Reservoir computing is the learning process only need to
+ be done for the output layer, simplifying the training process and computation.
+ 
+\end_layout
+
+\begin_layout Standard
+This research tries to apply the reservoir computing approach to the non-linear
+ Schr
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\begin_inset Quotes erd
+\end_inset
+
+{o}
+\end_layout
+
+\end_inset
+
+dinger equations.
+ NLS is an ubiquitous equation in physics that models many phenomena likes
+ optics, ocean waves with modulating amplitude, rogue waves etc.
+ In particular, we would like to train the phenomena of the occurence of
+ rogue waves using the NLS equation.
+ 
+\end_layout
+
+\begin_layout Section
+Reservoir Computing
+\end_layout
+
+\begin_layout Standard
+Reservoir computing can be taught as a subset of Recurrent Neural Networks.
+ The main principle in reservoir computing is the separation between internal
+ states (reservoir) and the readout learning.
+ As opposed to the backward propagation method which trains both the states
+ and output parameters, the training in reservoir computing only applies
+ to the readout, simplifying the learning while still capable to solve tasks
+ (almost always) better compared with RNN 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Lukosevicius2009a,Chattopadhyay2020"
+literal "false"
+
+\end_inset
+
+.
+ In this research, we follows the adjustment for spatialtemporal models
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Pathak2018"
+literal "false"
+
+\end_inset
+
+, which split the spatial data into overlapping domains and train multiple
+ reservoirs for each data chunk.
+ The reasoning of splitting the data is that the exchange of information
+ between two very far seperated spatial grid is not immediate, thus creating
+ reservoir state modelling a connection between faraway points is not physical
+ and also a waste of computation effort.
+ Thus by partitioning the grid while maintaining exchange of information
+ between reservoir, render the size of reservoir and the amount of training
+ data becomes manageable.
+ 
+\end_layout
+
+\begin_layout Standard
+To be precise let measurement data consist of spatiotemporal data 
+\begin_inset Formula $\mathbf{U}=(u_{ij})$
+\end_inset
+
+ , with temporal index 
+\begin_inset Formula $1\leq i\leq N_{\tau},$
+\end_inset
+
+ and spatial index 
+\begin_inset Formula $1\leq j<N_{\xi}$
+\end_inset
+
+.
+ The periodic spatial grid was splitted into non-overlapping regions 
+\begin_inset Formula $\mathbf{s}^{(k)}=\left(s_{ij}^{(k)}\right)$
+\end_inset
+
+ , with 
+\begin_inset Formula $1\leq j\leq n_{p},1\leq k\leq M$
+\end_inset
+
+ with 
+\begin_inset Formula $n_{p}$
+\end_inset
+
+ is the number of nodes at each partition and 
+\begin_inset Formula $M$
+\end_inset
+
+ is the number of partition.
+ Remark that 
+\begin_inset Formula $M\times n_{p}=N_{\xi}$
+\end_inset
+
+.
+ Associated with each partition 
+\begin_inset Formula $\mathbf{s}^{(k)},$
+\end_inset
+
+there is an overlapping domain 
+\begin_inset Formula $\mathbf{v}^{(k)}$
+\end_inset
+
+ with overlap buffer regions 
+\begin_inset Formula $l$
+\end_inset
+
+ at each most left and right nodes , thus 
+\begin_inset Formula $\mathbf{v}^{(k)}$
+\end_inset
+
+ has 
+\begin_inset Formula $n_{p}+2l$
+\end_inset
+
+ spatial grid.
+ Furthermore, the data is temporally split into training and testing set.
+ The overlapping domain serve as input for the each reservoir enabling change
+ of information between neighboring reservoir, while the non-overlapping
+ domain will act as the output.
+ 
+\end_layout
+
+\begin_layout Standard
+Following the formalism in 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Lu2018"
+literal "false"
+
+\end_inset
+
+, we divide the steps in reservoir computing into three steps: (1) listening,
+ (2) training, (3) prediction.
+ 
+\end_layout
+
+\begin_layout Standard
+The listening process correspond to constructing reservoir and evolve them
+ based on input and previous states.
+ Specifically let 
+\begin_inset Formula $r_{i}^{(k)}\in\mathbb{R}^{M}$
+\end_inset
+
+ with 
+\begin_inset Formula $M\gg n_{p}+2l$
+\end_inset
+
+ denote the state of reservoir 
+\begin_inset Formula $k$
+\end_inset
+
+ at time index 
+\begin_inset Formula $i$
+\end_inset
+
+.
+ The reservoir dynamics is given by: 
+\begin_inset Formula 
+\begin{equation}
+r_{i+1}^{(k)}=\tanh\left(W^{(k)}r_{i}^{(k)}+W_{in}^{(k)}v_{i}^{(k)}\right)\label{eq:Internal_State}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The matrix 
+\begin_inset Formula $W^{(k)}$
+\end_inset
+
+ is an adjecency matrix which usually set to ensure 
+\begin_inset Quotes eld
+\end_inset
+
+Echo States Property
+\begin_inset Quotes erd
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Jaeger2004"
+literal "false"
+
+\end_inset
+
+.
+ In a simplified term, this condition express that the effect of previous
+ state and previous input at future state should vanish gradually at future
+ time.
+ Practically, even though not always neccessary but the echo state property
+ property is satisfied by scaling 
+\begin_inset Formula $W^{(k)},$
+\end_inset
+
+ such that 
+\begin_inset Formula $W^{(k)}$
+\end_inset
+
+ are contractive i.e.
+ the spectral radius of matrix 
+\begin_inset Formula $W^{(k)}$
+\end_inset
+
+ given by 
+\begin_inset Formula $\rho$
+\end_inset
+
+ should satisfies 
+\begin_inset Formula $\rho<1$
+\end_inset
+
+.
+ Furthermore, the adjecency matrix is set to be sparsely connected and random
+ to ensure that the reservoir is rich enough for learning phase.
+ The input coupling matrix 
+\begin_inset Formula $W_{in}^{(k)}$
+\end_inset
+
+ is a sparse matrix whose entries magnitude not more than 
+\begin_inset Formula $\sigma$
+\end_inset
+
+.
+ Furthermore, the approximate number of non-zero element at each row is
+ fixed.
+ 
+\end_layout
+
+\begin_layout Standard
+The learning phase involve in finding output matrix 
+\begin_inset Formula $W_{out}^{(k)}$
+\end_inset
+
+ such that the readout defined by: 
+\begin_inset Formula 
+\begin{equation}
+y_{i}^{(k)}=W_{out}^{(k)}\hat{r}_{i}^{(k)}\label{eq:Output}
+\end{equation}
+
+\end_inset
+
+ minimized a cost function.
+ The modified state 
+\begin_inset Formula $\hat{r}_{i}^{(k)}$
+\end_inset
+
+ is a nonlinear modification aimed to futher enhance the nonlinearity feature
+ of the reservoir
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Chattopadhyay2020,Pathak2018"
+literal "false"
+
+\end_inset
+
+.
+ Let 
+\begin_inset Formula $r_{ij}^{(k)}$
+\end_inset
+
+ is the 
+\begin_inset Formula $j$
+\end_inset
+
+-th element of vector 
+\begin_inset Formula $r_{ij}^{(k)}$
+\end_inset
+
+, then the 
+\begin_inset Formula $j$
+\end_inset
+
+-th element of vector 
+\begin_inset Formula $\hat{r}_{ij}^{(k)}$
+\end_inset
+
+ is defined as:
+\begin_inset Formula 
+\begin{align}
+\hat{r}_{ij}^{(k)} & =\begin{cases}
+r_{ij}^{(k)} & j\text{ is odd }\\
+\left(r_{ij}^{(k)}\right)^{2} & j\text{ is even }
+\end{cases}\label{eq:nlat}
+\end{align}
+
+\end_inset
+
+ The usual cost function is: 
+\begin_inset Formula 
+\begin{equation}
+E^{(k)}=\min_{W_{out}^{k}}\sum_{i=1}^{N_{train}}\left\Vert W_{out}^{(k)}\hat{r}_{i}^{(k)}-s_{i}^{(k)}\right\Vert _{2}^{2}+\beta\left\Vert W_{out}^{(k)}\right\Vert ^{2}\label{eq:Cost_Function}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In essential, the training can be done by using any method to solve linear
+ least square problem.
+ By defining the 
+\begin_inset Formula $\mathbf{R}^{(k)}$
+\end_inset
+
+ and 
+\begin_inset Formula $\mathbf{S}^{(k)}$
+\end_inset
+
+ as a matrix whose 
+\begin_inset Formula $i$
+\end_inset
+
+-th column is vector 
+\begin_inset Formula $\hat{r}_{i}^{(k)}$
+\end_inset
+
+ and 
+\begin_inset Formula $s_{i}^{(k)}$
+\end_inset
+
+ respectively, then the training process is equivalent to solve the following
+ matrix equation: 
+\begin_inset Formula 
+\[
+\left(\mathbf{R}^{(k)}\mathbf{R}^{(k)*}+\beta\mathbf{I}\right)W^{(k)*}=\mathbf{R}^{(k)}\mathbf{S^{*}}
+\]
+
+\end_inset
+
+ with notation 
+\begin_inset Formula $\mathbf{R}{}^{*}$
+\end_inset
+
+ denotes the conjugate transpose of matrix 
+\begin_inset Formula $\mathbf{R}$
+\end_inset
+
+, and 
+\begin_inset Formula $\mathbf{I}$
+\end_inset
+
+ is the identity matrix with suitable dimension.
+ 
+\end_layout
+
+\begin_layout Standard
+During the prediction phase, the input vector 
+\begin_inset Formula $v_{i}^{(k)}$
+\end_inset
+
+ in equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:Internal_State"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ is replaced by the recent available prediction from the readout (equation
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:Output"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+) using the output matrix obtained during the training phase.
+ However, as the vector 
+\begin_inset Formula $v_{i}^{(k)}$
+\end_inset
+
+ consist of overlapping domain, then the output should be constructed by
+ combining information from the neighbouring reservoir 
+\begin_inset Formula $y_{i}^{(k-1)},y_{i}^{(k)}y_{i}^{(k+1)}$
+\end_inset
+
+.
+ Calling this prediction as 
+\begin_inset Formula $\tilde{v}_{i}^{(k)}$
+\end_inset
+
+, then the steps in prediction phase are: 
+\end_layout
+
+\begin_layout Enumerate
+Compute 
+\begin_inset Formula $y_{i}^{(k)}=W_{out}^{k}\hat{r}_{i}^{(k)}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Construct 
+\begin_inset Formula $\tilde{v}_{i}^{(k)}$
+\end_inset
+
+ based on 
+\begin_inset Formula $y_{i}^{(k-1)},y_{i}^{(k)}y_{i}^{(k+1)}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Update the reservoir states: 
+\begin_inset Formula $r_{i+1}^{(k)}=\tanh\left(W^{(k)}r_{i}^{(k)}+W_{in}^{(k)}\tilde{v}_{i}^{(k)}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The implementation of the reservoir computing is based on the code 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Martinuzzi2020"
+literal "false"
+
+\end_inset
+
+ which provide implementations of the reservoir computing including the
+ non-linear transformation.
+ 
+\end_layout
+
+\begin_layout Section
+Result and Discussion
+\end_layout
+
+\begin_layout Subsection
+Verification: Lorenz 96 Equation
+\end_layout
+
+\begin_layout Standard
+The Lorentz 96 system is a coupled ordinary differential euqation which
+ is used as initial model for atmospheric dynamics or testing a machine
+ learning algorithm for spatiotemporal chaotic system 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Pathak2021,Chattopadhyay2020"
+literal "false"
+
+\end_inset
+
+.
+ The model is defined as coupled ordinary differential equations: 
+\begin_inset Formula 
+\[
+\frac{dX_{j}}{dt}=-X_{j}+X_{j-1}X_{j+1}-X_{j-1}X_{j-2}+F
+\]
+
+\end_inset
+
+with the spatial variables 
+\begin_inset Formula $X_{j}$
+\end_inset
+
+, 
+\begin_inset Formula $1\leq j\leq N$
+\end_inset
+
+,
+\begin_inset Formula $X_{j+N}=X_{j}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+The training data is generated by using 4th order Runge Kutta time integrator
+ with fixed time step 
+\begin_inset Formula $\Delta t=0.01$
+\end_inset
+
+ and choosing 
+\begin_inset Formula $F=8$
+\end_inset
+
+.
+ The number of spatial grid 
+\begin_inset Formula $N$
+\end_inset
+
+ is 40 with the initial condition at every grid being a random number between
+ 0 and 1.
+ The largest Lyapunov exponent for this system is 
+\begin_inset Formula $\Lambda=1.4$
+\end_inset
+
+ .
+ The number of training data is 
+\begin_inset Formula $N_{train}$
+\end_inset
+
+= 80000.
+ The hyperparameter used in reservoir computing is given in Table 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "hyp_Lorenz"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ which are quite similar with the hyperparameter in similar problem used
+ in 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Pathak2021"
+literal "false"
+
+\end_inset
+
+.
+ The spatially averaged error at time index 
+\begin_inset Formula $i$
+\end_inset
+
+ is given by: 
+\begin_inset Formula 
+\[
+e_{i}=\frac{\left\Vert \tilde{u}_{i}-u_{i}\right\Vert }{\left\Vert u_{i}\right\Vert }
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="7" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Parameter
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Explanation
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Value
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\rho$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Spectral Radius of 
+\begin_inset Formula $W$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.6
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\sigma$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+maximum elementwise magnitude of 
+\begin_inset Formula $W_{in}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\beta$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Regularization Parameter
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $10^{-4}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $M$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Number of reservoirs
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+20
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $l$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Number of overlap grid
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $D$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Node in reservoir
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5000
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Hyperparameter for Lorenz 96
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "hyp_Lorenz"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig_pred_Lorenz"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ shows a comparison between the test data and the prediction by Reservoir
+ Computing.
+ The second panel shows the prediction by reservoir computing, while the
+ third panel shows the difference between the prediction and the 
+\begin_inset Quotes eld
+\end_inset
+
+real
+\begin_inset Quotes erd
+\end_inset
+
+ test data (shown in first panel).
+ The fourth panel plots the error of the solutions over time.
+ Comparing our result with the result presented in 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Pathak2021"
+literal "false"
+
+\end_inset
+
+(Figure 7) , reveals that our result lies between the realizable RMS error
+ in the computation.
+ A more robust comparison can be achieved by doing predictions starting
+ from different states of attractor, which might be our future work.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename E:/KU/Julia/Lorenz/220125/plot.png
+	width 85text%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Prediction of Lorentz 96 
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig_pred_Lorenz"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Non-Linear Schr
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\begin_inset Quotes erd
+\end_inset
+
+{o}
+\end_layout
+
+\end_inset
+
+dinger
+\end_layout
+
+\begin_layout Standard
+We train reservoir to learn the solution of NLS equation given by: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+i\frac{\partial\psi}{\partial\tau}+\frac{1}{2}\frac{\partial^{2}\psi}{\partial\xi^{2}}+\left|\psi\right|^{2}\psi=0
+\]
+
+\end_inset
+
+with the amplitude envelope 
+\begin_inset Formula $\psi(\xi,\tau)$
+\end_inset
+
+ is a function of propagation distance 
+\begin_inset Formula $\xi$
+\end_inset
+
+ and co-moving time 
+\begin_inset Formula $\tau$
+\end_inset
+
+.
+ We are aimed at simulating the construction of 5
+\begin_inset script superscript
+
+\begin_layout Plain Layout
+th
+\end_layout
+
+\end_inset
+
+ order breather on a uniform background.
+ This test case represents an important modulation instability which is
+ modelling the formation of a rogue wave.
+ The objective of this simulation is to investigate under what conditions
+ the Reservoir Computing can learn and simulate the maximum peak of a breather
+ in NLS.
+ For that purpose, we intentionally hide the peak of thr breather from the
+ training data and preserve it as a part of test set.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename NLS_sim.png
+	width 90text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Fifth order breather simulation by NLS
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:train_NLS"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The training and test data is generated by using 6th order split-step method
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Yoshida1990"
+literal "false"
+
+\end_inset
+
+ implemented in Julia library the NonlinearSchrodinger.jl 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Ashour2021"
+literal "false"
+
+\end_inset
+
+.
+ A brief explanation of the split-step method is given in Appendix.
+ The initial condition was prepared according to 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Chin2016a"
+literal "false"
+
+\end_inset
+
+ which generate the initial condition for maximum intensity soliton via
+ Darboux Transformation.
+ The modulation parameter used in generating the training set is 
+\begin_inset Formula $a=0.4802$
+\end_inset
+
+ in which there exists a unique maximum intensity soliton up to fifth order.
+ The length of the spatial domain is one period 
+\begin_inset Formula $[-L/2,L/2]$
+\end_inset
+
+ with 
+\begin_inset Formula $L=\pi/\sqrt{1-2a}$
+\end_inset
+
+ and 256 spatial nodes.
+ The simulation was started from 
+\begin_inset Formula $t=0$
+\end_inset
+
+, with 
+\begin_inset Formula $\Delta t=0.01$
+\end_inset
+
+ and the peaks was achieved after 
+\begin_inset Formula $t=10.$
+\end_inset
+
+ Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:train_NLS"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ shows the training and the test set.
+ The white line separates between the training and test set at 
+\begin_inset Formula $t=9.5$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename E:/KU/Julia/NLS/RC/220124/plot_hasil.png
+	width 90text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+NLS simulation
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:NLS_RC_result"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The hyperparameters used in the prediction of NLS is given in Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "hyp_NLS"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ which are decided in reference to the simulation of Kuramoto-Sivashinsky
+ equations using RC 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Pathak2021"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="7" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Parameter
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Explanation
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Value
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\rho$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Spectral Radius of 
+\begin_inset Formula $W$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.6
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\sigma$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+maximum elementwise magnitude of 
+\begin_inset Formula $W_{in}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\beta$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Regularization Parameter
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $10^{-4}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $M$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Number of reservoirs
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+32
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $l$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Number of overlap grid
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $D$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Nodes in reservoir
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4000
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Hyperparameter for Nonlinear Schr
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\begin_inset Quotes erd
+\end_inset
+
+{o}
+\end_layout
+
+\end_inset
+
+dinger
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "hyp_NLS"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:NLS_RC_result"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ depict a result of our Reservoir Computing Simulation.
+ The prediction yields an accurate result up to 0.1 seconds from the start
+ of the prediction phase.
+ Following that we observe gradual overestimation of 
+\begin_inset Formula $\left|\psi\right|$
+\end_inset
+
+ until 
+\begin_inset Quotes eld
+\end_inset
+
+breathers
+\begin_inset Quotes erd
+\end_inset
+
+ were generated at 
+\begin_inset Formula $t=9.728,$
+\end_inset
+
+9.666, 9.77 which are ahead of the expected true breather.
+ The magnitude of RC prediction resulted in an overestimation of the breather
+ peak more than two and six times the expected height which can be observed
+ in detail in 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:NLS_RC_result_magnitude"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ .
+ In the figure, we also presented a profile of the magnitude of RC prediction
+ one time step after the peak breather.
+ 
+\end_layout
+
+\begin_layout Standard
+The error accumulates and beginning at 
+\begin_inset Formula $t=9.6$
+\end_inset
+
+s the error is too significant and yield a totally wrong prediction.
+ The unreliability of the result after 
+\begin_inset Formula $t=9.6s$
+\end_inset
+
+ was also observed in calculation of norm error and energy error in the
+ RC result shown in 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:NLS_RC_IoM"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ The norm error and energy error was defined as the differences between
+ norm and energy at particular times with the norm and energy at the beginning
+ of the prediction stage.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename E:/KU/Julia/NLS/RC/220124/mag_compare.png
+	width 90text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Comparison of magnitude at different time prediction
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:NLS_RC_result_magnitude"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename E:/KU/Julia/NLS/RC/220124/IOM.png
+	width 90text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Comparison of norm error and energy error
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:NLS_RC_IoM"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Future Work
+\end_layout
+
+\begin_layout Standard
+The verification stage by replicating the simulation of the Lorenz 96 actuator
+ gives confidence in the code for Reservoir Computing.
+ To obtain a robust estimation of the accuracy of the RC prediction, one
+ can run the prediction stage over several intervals as done in 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Pathak2021,Chattopadhyay2020"
+literal "false"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+The prediction of Reservoir Computing to the simulation of the NLS equation
+ yield a good prediction until 
+\begin_inset Formula $t=0.1.$
+\end_inset
+
+ Several adjustments of hyperparameter is a future research direction including
+ but not limited to shifting the start of the prediction stage, increasing
+ the number of training data, varying the spectral radius, number of reservoirs,
+ regularization parameter etc.
+ Furthermore, we will try to change the non-linearity transformation as
+ done in 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Chattopadhyay2020"
+literal "false"
+
+\end_inset
+
+ for instance by changing the equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:nlat"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ by cubic non-linearity which is the nonlinearity presents in the NLS equation.
+ 
+\end_layout
+
+\begin_layout Standard
+From the computational point of view, we would like to improve our existing
+ Julia code by (1) Harnessing the parallel computation especially as we
+ use multiply reservoirs which are highly parallel to each other (2) Test
+ whether exploiting the sparseness of adjacent matrix 
+\begin_inset Formula $W$
+\end_inset
+
+ and input to reservoir coupling matrix 
+\begin_inset Formula $W_{in}$
+\end_inset
+
+ will improve the computational time.
+ 
+\end_layout
+
+\begin_layout Section
+Conclusion
+\end_layout
+
+\begin_layout Standard
+The prediction of reservoir computing for solving 5th order breather of
+ NLS with a hyperparameter shows that the (provisional) prediction time
+ is about 0.1 seconds.
+ Further research needs to be done by varying the hyperparameter used in
+ reservoir computing and closely observing the impact of these to the prediction
+ result.
+ 
+\end_layout
+
+\begin_layout Section
+\start_of_appendix
+NLS Training Data Generation
+\end_layout
+
+\begin_layout Standard
+The Nonlinear Schrodinger equation was solved using 6th order split-step
+ method 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Weideman1986"
+literal "false"
+
+\end_inset
+
+.
+ The superiority of split-step method compared to variants of finite difference
+ methods to discretize the nonlinear Schr
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\begin_inset Quotes erd
+\end_inset
+
+{o}
+\end_layout
+
+\end_inset
+
+dinger equation was investigated in 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Taha1984"
+literal "false"
+
+\end_inset
+
+.
+ The split-step method considers the NLS equations consist of two differential
+ operators: 
+\begin_inset Formula 
+\[
+\mathcal{N=}\left|\psi\right|^{2}\psi\qquad\mathcal{D}=\frac{1}{2}\frac{\partial^{2}\psi}{\partial\xi^{2}}
+\]
+
+\end_inset
+
+The NLS can be rewritten as the following: 
+\begin_inset Formula 
+\begin{equation}
+\frac{\partial\psi}{\partial\tau}=i\mathcal{D}+i\mathcal{N}\label{eq:NLS_op1}
+\end{equation}
+
+\end_inset
+
+Let 
+\begin_inset Formula $e^{i\mathcal{D\tau}}\psi_{0}$
+\end_inset
+
+ the exact solution of the initial value problem: 
+\begin_inset Formula 
+\[
+\frac{\partial\psi}{\partial\tau}=i\mathcal{D}
+\]
+
+\end_inset
+
+The numerical implementation of the solution of the dispersive operator
+ is performed in the Fourier space.
+ Specifically, let 
+\begin_inset Formula $\mathcal{F},\mathcal{F}^{-1}$
+\end_inset
+
+ denote the Fourier transform and inverse Fourier transform respectively,
+ then: 
+\begin_inset Formula 
+\[
+e^{i\mathcal{D\tau}}\psi_{0}=\mathcal{F}^{-1}\left\{ e^{-i\omega^{2}\tau/2}\mathcal{F}\left\{ \psi_{0}\right\} \right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+while 
+\begin_inset Formula $e^{i\mathcal{N\tau}}\psi_{0}$
+\end_inset
+
+ the exact solution of: 
+\begin_inset Formula 
+\[
+\frac{\partial\psi}{\partial\tau}=i\mathcal{N}
+\]
+
+\end_inset
+
+which can be computed straightforwardly as: 
+\begin_inset Formula 
+\[
+e^{i\mathcal{N\tau}}\psi_{0}=e^{i\tau\left|\psi\right|^{2}}\psi_{0}
+\]
+
+\end_inset
+
+The solution of the original problem is given by 
+\begin_inset Formula $e^{i\mathcal{D}\tau+i\mathcal{N}\tau}\psi_{0}$
+\end_inset
+
+.
+ The idea of the split-step method is approximate the solution of NLS as
+ a composition of the non-linear and the dispersion operator: 
+\begin_inset Formula 
+\[
+e^{i\mathcal{D}\tau+i\mathcal{N}\tau}=e^{id_{m}\mathcal{D\tau}}e^{ic_{m}\mathcal{N}\mathcal{\tau}}\cdots e^{ic_{1}\mathcal{N\tau}}e^{id_{0}\mathcal{D\tau}}e^{ic_{0}\mathcal{N\tau}}+O(\tau^{k})
+\]
+
+\end_inset
+
+Note that by the Baker-Campbell-Hausdorff formula,if 
+\begin_inset Formula $\mathcal{D},\mathcal{N}$
+\end_inset
+
+ is commute: 
+\begin_inset Formula $[\mathcal{D},\mathcal{N}]=\mathcal{DN-ND}=0$
+\end_inset
+
+ then 
+\begin_inset Formula $c_{0}=d_{0}=1$
+\end_inset
+
+ while 
+\begin_inset Formula $c_{1}=c_{2}=\cdots c_{m}=d_{1}=d_{2}=\cdots d_{m}=0$
+\end_inset
+
+, namely if the operators are commute then 
+\begin_inset Formula $e^{i\mathcal{D}\tau+i\mathcal{N}\tau}=e^{i\mathcal{D}\tau}e^{i\mathcal{N}\tau}$
+\end_inset
+
+.
+ However, in NLS equation the operator is not commute, hence we have to
+ approximate the exponential operator and retain the solution until order
+ 
+\begin_inset Formula $k$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Section*
+—————–
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+The following bibliography styles are allowed: 
+\family sans
+elsarticle-harv
+\family default
+, 
+\family sans
+elsarticle-num-names
+\family default
+, or 
+\family sans
+elsarticle-num
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+btprint "btPrintCited"
+bibfiles "E:/KU/bib_files/Dissertation"
+options "bibtotoc,elsarticle-harv"
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
